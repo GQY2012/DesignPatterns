@@ -14,5 +14,4 @@ public class ConcreteObserver implements Observer{
 		this.mystate = mystate;
 	}
 
-	
 }

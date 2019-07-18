@@ -8,7 +8,7 @@ import java.util.Date;
  * @author gqy2012
  *
  */
-public class Sheep implements Cloneable,Serializable{
+public class Sheep implements Cloneable{
 	private String name;
 	private Date birthday;
 	
@@ -48,3 +48,5 @@ public class Sheep implements Cloneable,Serializable{
 	}
 	
 }
+
+

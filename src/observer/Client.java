@@ -24,9 +24,9 @@ public class Client {
 		ConcreteObserver o2 = new ConcreteObserver();
 		ConcreteObserver o3 = new ConcreteObserver();
 		
-		cs.register(o1);
-		cs.register(o2);
-		cs.register(o3);
+		cs.registerObserver(o1);
+		cs.registerObserver(o2);
+		cs.registerObserver(o3);
 		
 		cs.setSubject(300);
 		

@@ -116,3 +116,29 @@ enum D{
 	INSTANCE;
 	
 }
+
+/**
+ * 双重检测锁
+ *
+ */
+
+class E{
+	
+	private E() {
+		
+	}
+	//volatile防止指令重排序
+	private volatile static E instance;
+	
+	public static E getInstance() {
+		//在synchronized外作一次非空检测，提升效率
+		if(instance == null) {
+			synchronized(E.class) {
+				if(instance == null) {
+					instance = new E();
+				}
+			}
+		}
+		return instance;
+	}
+}

@@ -1,6 +1,6 @@
 package observer;
 
-public class ConcreteSubject extends Subject{
+public class ConcreteSubject extends NewspaperOffice{
 
 	private int state;
 	
@@ -10,7 +10,7 @@ public class ConcreteSubject extends Subject{
 	
 	public void setSubject(int state) {
 		this.state = state;
-		
-		this.notifyAllObserver();
+		//state变化，通知Observer更新
+		this.notifyObservers();
 	}
 }

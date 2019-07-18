@@ -1,4 +1,4 @@
-package templatemethod;
+ package templatemethod;
 /**
  * 模板方法模式template method
  * 

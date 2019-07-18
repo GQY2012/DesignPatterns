@@ -12,7 +12,8 @@ public class ConcreteObserver2 implements Observer{
 	private int myState;
 	@Override
 	public void update(Observable o, Object arg) {
-		myState = ((ConcreteSubject2) o).getState();
+		//myState = ((ConcreteSubject2) o).getState();
+		myState = (int) arg;
 	}
 	public int getMyState() {
 		return myState;
